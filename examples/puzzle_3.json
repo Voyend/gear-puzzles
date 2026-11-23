@@ -1,0 +1,183 @@
+{
+	"chains": [],
+	"format": 1,
+	"gears": [
+		{
+			"axle": -1,
+			"fixed": true,
+			"id": "Motor",
+			"layer": 0,
+			"position": [
+				-253.480743408203,
+				1.32730865478516
+			],
+			"rotation": -1.83016467094421,
+			"template": 0
+		},
+		{
+			"axle": -1,
+			"fixed": true,
+			"id": "Target",
+			"layer": 0,
+			"position": [
+				66.5192565917969,
+				241.327301025391
+			],
+			"rotation": 1.95269429683685,
+			"template": 2
+		},
+		{
+			"axle": -1,
+			"fixed": true,
+			"id": "Blocker",
+			"layer": 0,
+			"position": [
+				-131.671112060547,
+				108.021644592285
+			],
+			"rotation": -2.70494484901428,
+			"template": 3
+		}
+	],
+	"objectives": [
+		{
+			"condition": {
+				"children": [
+					{
+						"cmp": "approx",
+						"gear": "Target",
+						"op": "compare",
+						"property": "speed",
+						"value": -20.0
+					}
+				],
+				"op": "hold",
+				"seconds": 1.0
+			},
+			"required": true,
+			"title": ""
+		}
+	],
+	"rules": {
+		"areas": [
+			{
+				"mode": "allow",
+				"rect": [
+					-618.0,
+					-143.0,
+					1116.0,
+					605.0
+				]
+			}
+		],
+		"limits": [
+			{
+				"count": 0,
+				"template": 0
+			},
+			{
+				"count": 2,
+				"template": 1
+			},
+			{
+				"count": 0,
+				"template": 2
+			},
+			{
+				"count": 0,
+				"template": 3
+			}
+		]
+	},
+	"templates": [
+		{
+			"antialiased": true,
+			"bore_ratio": 0.3,
+			"fill_color": "5abcdaff",
+			"hub_color": "3f8499ff",
+			"hub_ratio": 0.7,
+			"id_prefix": "",
+			"lock_clockwise": true,
+			"min_speed": 0.0,
+			"motor_free_speed": 40.0,
+			"motor_stall_torque": 1.0,
+			"outline_color": "1a1c21ff",
+			"outline_width": 2.0,
+			"resistance": 0.0,
+			"rim_ratio": 1.5,
+			"slip_torque": 50.0,
+			"tooth_count": 16,
+			"tooth_size": 10,
+			"type": "SPUR"
+		},
+		{
+			"antialiased": true,
+			"bore_ratio": 0.3,
+			"fill_color": "8c94a1ff",
+			"hub_color": "6b7380ff",
+			"hub_ratio": 0.7,
+			"id_prefix": "",
+			"lock_clockwise": true,
+			"min_speed": 0.0,
+			"motor_free_speed": 0.0,
+			"motor_stall_torque": 0.0,
+			"outline_color": "1a1c21ff",
+			"outline_width": 2.0,
+			"resistance": 0.0,
+			"rim_ratio": 1.5,
+			"slip_torque": 50.0,
+			"tooth_count": 16,
+			"tooth_size": 10,
+			"type": "SPUR"
+		},
+		{
+			"antialiased": true,
+			"bore_ratio": 0.3,
+			"fill_color": "8c94a1ff",
+			"hub_color": "6b7380ff",
+			"hub_ratio": 0.7,
+			"id_prefix": "",
+			"lock_clockwise": true,
+			"min_speed": 0.0,
+			"motor_free_speed": 0.0,
+			"motor_stall_torque": 0.0,
+			"outline_color": "1a1c21ff",
+			"outline_width": 2.0,
+			"resistance": 0.0,
+			"rim_ratio": 1.5,
+			"slip_torque": 50.0,
+			"tooth_count": 32,
+			"tooth_size": 10,
+			"type": "SPUR"
+		},
+		{
+			"antialiased": true,
+			"bore_ratio": 0.3,
+			"fill_color": "da5a5aff",
+			"hub_color": "993f3fff",
+			"hub_ratio": 0.7,
+			"id_prefix": "",
+			"lock_clockwise": true,
+			"min_speed": 0.0,
+			"motor_free_speed": 0.0,
+			"motor_stall_torque": 0.0,
+			"outline_color": "1a1c21ff",
+			"outline_width": 2.0,
+			"resistance": 1.0,
+			"rim_ratio": 1.5,
+			"slip_torque": 50.0,
+			"tooth_count": 8,
+			"tooth_size": 10,
+			"type": "SPUR"
+		}
+	],
+	"title": "puzzle_3",
+	"view": {
+		"layer": 0,
+		"position": [
+			-86.0,
+			156.0
+		],
+		"zoom": 1.65
+	}
+}

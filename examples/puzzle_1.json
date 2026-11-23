@@ -1,0 +1,123 @@
+{
+	"chains": [],
+	"format": 1,
+	"gears": [
+		{
+			"axle": -1,
+			"fixed": true,
+			"id": "Target",
+			"layer": 0,
+			"position": [
+				-166.816864013672,
+				266.263336181641
+			],
+			"rotation": -2.22451043128967,
+			"template": 0
+		},
+		{
+			"axle": -1,
+			"fixed": true,
+			"id": "P3",
+			"layer": 0,
+			"position": [
+				-166.816864013672,
+				-213.736663818359
+			],
+			"rotation": -1.73310160636902,
+			"template": 1
+		}
+	],
+	"objectives": [
+		{
+			"condition": {
+				"children": [
+					{
+						"cmp": "approx",
+						"gear": "Target",
+						"op": "compare",
+						"property": "speed",
+						"value": -30.0
+					}
+				],
+				"op": "hold",
+				"seconds": 1.0
+			},
+			"required": true,
+			"title": ""
+		}
+	],
+	"rules": {
+		"areas": [
+			{
+				"mode": "allow",
+				"rect": [
+					-661.0,
+					-436.0,
+					990.0,
+					936.0
+				]
+			}
+		],
+		"limits": [
+			{
+				"count": 2,
+				"template": 0
+			},
+			{
+				"count": 0,
+				"template": 1
+			}
+		]
+	},
+	"templates": [
+		{
+			"antialiased": true,
+			"bore_ratio": 0.3,
+			"fill_color": "8c94a1ff",
+			"hub_color": "6b7380ff",
+			"hub_ratio": 0.7,
+			"id_prefix": "",
+			"lock_clockwise": true,
+			"min_speed": 0.0,
+			"motor_free_speed": 0.0,
+			"motor_stall_torque": 0.0,
+			"outline_color": "1a1c21ff",
+			"outline_width": 2.0,
+			"resistance": 0.0,
+			"rim_ratio": 1.5,
+			"slip_torque": 50.0,
+			"tooth_count": 16,
+			"tooth_size": 10,
+			"type": "SPUR"
+		},
+		{
+			"antialiased": true,
+			"bore_ratio": 0.3,
+			"fill_color": "5abcdaff",
+			"hub_color": "3f8499ff",
+			"hub_ratio": 0.7,
+			"id_prefix": "",
+			"lock_clockwise": true,
+			"min_speed": 0.0,
+			"motor_free_speed": 30.0,
+			"motor_stall_torque": 1.0,
+			"outline_color": "1a1c21ff",
+			"outline_width": 2.0,
+			"resistance": 0.0,
+			"rim_ratio": 1.5,
+			"slip_torque": 50.0,
+			"tooth_count": 16,
+			"tooth_size": 10,
+			"type": "SPUR"
+		}
+	],
+	"title": "puzzle_1",
+	"view": {
+		"layer": 0,
+		"position": [
+			-167.0,
+			-11.0
+		],
+		"zoom": 0.95
+	}
+}
